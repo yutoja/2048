@@ -162,9 +162,6 @@ window.addEventListener('load', function () {
       }
     }
   }
-  window.ontouchmove = function (e) {
-    e.preventdefault()
-  }
   // 创建方块移动函数
   function move(direction) {
     frequency = false
