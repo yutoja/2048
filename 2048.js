@@ -197,7 +197,11 @@ window.addEventListener('load', function () {
             }
             // 若有则给对应的方块添加标识
             if (bei && value.innerText === bei.getAttribute('d_td')) {
-              ;[...document.querySelectorAll('p')].filter((val) => val.getAttribute('top') == bei.offsetTop && val.getAttribute('left') == bei.offsetLeft)[0].setAttribute('san', 0)
+              ;[...document.querySelectorAll('p')]
+                .filter((val) => val.getAttribute('top') == bei.offsetTop && val.getAttribute('left') == bei.offsetLeft)
+                .forEach((value) => {
+                  value.setAttribute('san', 0)
+                })
               value.innerText = value.innerText * 2
               // 设置对应的分数
               grade += value.innerText * 1
@@ -266,7 +270,11 @@ window.addEventListener('load', function () {
             }
             // 若有则给对应的方块添加标识
             if (bei && value.innerText === bei.getAttribute('d_td')) {
-              ;[...document.querySelectorAll('p')].filter((val) => val.getAttribute('top') == bei.offsetTop && val.getAttribute('left') == bei.offsetLeft)[0].setAttribute('san', 0)
+              ;[...document.querySelectorAll('p')]
+                .filter((val) => val.getAttribute('top') == bei.offsetTop && val.getAttribute('left') == bei.offsetLeft)
+                .forEach((value) => {
+                  value.setAttribute('san', 0)
+                })
               value.innerText = value.innerText * 2
               // 并使方块额外前进一格
               i++
@@ -336,7 +344,11 @@ window.addEventListener('load', function () {
             }
             // 若有则给对应的方块添加标识
             if (bei && value.innerText === bei.getAttribute('d_td')) {
-              ;[...document.querySelectorAll('p')].filter((val) => val.getAttribute('top') == bei.offsetTop && val.getAttribute('left') == bei.offsetLeft)[0].setAttribute('san', 0)
+              ;[...document.querySelectorAll('p')]
+                .filter((val) => val.getAttribute('top') == bei.offsetTop && val.getAttribute('left') == bei.offsetLeft)
+                .forEach((value) => {
+                  value.setAttribute('san', 0)
+                })
               value.innerText = value.innerText * 2
               // 并使方块额外前进一格
               i++
@@ -405,7 +417,11 @@ window.addEventListener('load', function () {
             }
             // 若有则给对应的方块添加标识
             if (bei && value.innerText === bei.getAttribute('d_td')) {
-              ;[...document.querySelectorAll('p')].filter((val) => val.getAttribute('top') == bei.offsetTop && val.getAttribute('left') == bei.offsetLeft)[0].setAttribute('san', 0)
+              ;[...document.querySelectorAll('p')]
+                .filter((val) => val.getAttribute('top') == bei.offsetTop && val.getAttribute('left') == bei.offsetLeft)
+                .forEach((value) => {
+                  value.setAttribute('san', 0)
+                })
               // 累加
               value.innerText = value.innerText * 2
               // 并使方块额外前进一格
