@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  touch-action: none;
+}
+.re {
+  position: relative;
+  width: 205px;
+  border: 3px solid rgb(250, 57, 9);
+  border-radius: 5px;
+  margin: 100px auto;
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid rgb(232, 233, 183);
+  width: 50px;
+  height: 50px;
+}
+p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(250, 161, 161);
+  text-align: center;
+  line-height: 50px;
+  color: rgb(232, 233, 183);
+  border-radius: inherit;
+  transition: all 0.2s ease-out;
+}
+.shi {
+  display: none;
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  top: 240px;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+span {
+  color: red;
+  font-size: 24px;
+}
+button {
+  height: 40px;
+  width: 100px;
+  margin-top: 10px;
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+  opacity: 0;
+  animation: op 3s infinite;
+}
+.grade {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+}
+.color {
+  color: red;
+}
+@keyframes op {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.tishi {
+  position: fixed;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
